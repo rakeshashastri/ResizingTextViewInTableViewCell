@@ -3,7 +3,7 @@
 //  Test
 //
 //  Created by Rakesha Shastri on 08/08/18.
-//  Copyright © 2018 RakeshaShastri.Campaigns.vTouch. All rights reserved.
+//  Copyright © 2018 RakeshaShastri. All rights reserved.
 //
 
 import UIKit
