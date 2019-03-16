@@ -10,14 +10,18 @@
 		0E79644D211A378B00312E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79644C211A378B00312E2E /* AppDelegate.swift */; };
 		0E79644F211A378B00312E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79644E211A378B00312E2E /* ViewController.swift */; };
 		0E796454211A379500312E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E796453211A379500312E2E /* Assets.xcassets */; };
+		0E9021FA223CF04600F6EEDA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9021F9223CF04600F6EEDA /* Launch Screen.storyboard */; };
+		0E9021FC223CF35B00F6EEDA /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9021FB223CF35B00F6EEDA /* TextViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E796449211A378B00312E2E /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E796449211A378B00312E2E /* ResizingTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResizingTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E79644C211A378B00312E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E79644E211A378B00312E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E796453211A379500312E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E796458211A379500312E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9021F9223CF04600F6EEDA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0E9021FB223CF35B00F6EEDA /* TextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +38,8 @@
 		0E796440211A378B00312E2E = {
 			isa = PBXGroup;
 			children = (
-				0E79644B211A378B00312E2E /* Test */,
+				0E9021F9223CF04600F6EEDA /* Launch Screen.storyboard */,
+				0E79644B211A378B00312E2E /* ResizingTextView */,
 				0E79644A211A378B00312E2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,28 +47,29 @@
 		0E79644A211A378B00312E2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E796449211A378B00312E2E /* Test.app */,
+				0E796449211A378B00312E2E /* ResizingTextView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0E79644B211A378B00312E2E /* Test */ = {
+		0E79644B211A378B00312E2E /* ResizingTextView */ = {
 			isa = PBXGroup;
 			children = (
 				0E79644C211A378B00312E2E /* AppDelegate.swift */,
 				0E79644E211A378B00312E2E /* ViewController.swift */,
+				0E9021FB223CF35B00F6EEDA /* TextViewCell.swift */,
 				0E796453211A379500312E2E /* Assets.xcassets */,
 				0E796458211A379500312E2E /* Info.plist */,
 			);
-			path = Test;
+			path = ResizingTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0E796448211A378B00312E2E /* Test */ = {
+		0E796448211A378B00312E2E /* ResizingTextView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E79645B211A379500312E2E /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = 0E79645B211A379500312E2E /* Build configuration list for PBXNativeTarget "ResizingTextView" */;
 			buildPhases = (
 				0E796445211A378B00312E2E /* Sources */,
 				0E796446211A378B00312E2E /* Frameworks */,
@@ -73,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = Test;
+			name = ResizingTextView;
 			productName = Test;
-			productReference = 0E796449211A378B00312E2E /* Test.app */;
+			productReference = 0E796449211A378B00312E2E /* ResizingTextView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -93,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0E796444211A378B00312E2E /* Build configuration list for PBXProject "Test" */;
+			buildConfigurationList = 0E796444211A378B00312E2E /* Build configuration list for PBXProject "ResizingTextView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -106,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E796448211A378B00312E2E /* Test */,
+				0E796448211A378B00312E2E /* ResizingTextView */,
 			);
 		};
 /* End PBXProject section */
@@ -116,6 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E9021FA223CF04600F6EEDA /* Launch Screen.storyboard in Resources */,
 				0E796454211A379500312E2E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E9021FC223CF35B00F6EEDA /* TextViewCell.swift in Sources */,
 				0E79644F211A378B00312E2E /* ViewController.swift in Sources */,
 				0E79644D211A378B00312E2E /* AppDelegate.swift in Sources */,
 			);
@@ -255,7 +263,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 469RK8Q6EJ;
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ResizingTextView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -273,7 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 469RK8Q6EJ;
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ResizingTextView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,7 +296,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E796444211A378B00312E2E /* Build configuration list for PBXProject "Test" */ = {
+		0E796444211A378B00312E2E /* Build configuration list for PBXProject "ResizingTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E796459211A379500312E2E /* Debug */,
@@ -297,7 +305,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E79645B211A379500312E2E /* Build configuration list for PBXNativeTarget "Test" */ = {
+		0E79645B211A379500312E2E /* Build configuration list for PBXNativeTarget "ResizingTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E79645C211A379500312E2E /* Debug */,
