@@ -46,10 +46,10 @@ class TextViewCell: UITableViewCell {
     }
     
     func addConstraints() {
-        textView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding).isActive = true
-        textView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding).isActive = true
-        textView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding).isActive = true
-        textView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding).isActive = true
+        textView.leadingAnchor  .constraint(equalTo: contentView.leadingAnchor, constant: padding).isActive = true
+        textView.trailingAnchor .constraint(equalTo: contentView.trailingAnchor, constant: -padding).isActive = true
+        textView.topAnchor      .constraint(equalTo: contentView.topAnchor, constant: padding).isActive = true
+        textView.bottomAnchor   .constraint(equalTo: contentView.bottomAnchor, constant: -padding).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {
