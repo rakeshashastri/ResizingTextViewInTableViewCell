@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol TextViewUpdateProtocol {
+    func textViewChanged()
+}
+
 class TextViewCell: UITableViewCell {
     
     //MARK: Reuse ID
@@ -15,7 +19,7 @@ class TextViewCell: UITableViewCell {
     
     //MARK: UI Element(s)
     /// Reference of the parent table view so that it can be updated
-    var tableView: UITableView!
+    var textViewUpdateDelegate: TextViewUpdateProtocol!
     
     lazy var textView: UITextView = {
         let textView = UITextView()
@@ -61,8 +65,7 @@ class TextViewCell: UITableViewCell {
 extension TextViewCell: UITextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
-        self.tableView.beginUpdates()
-        self.tableView.endUpdates()
+        textViewUpdateDelegate.textViewChanged()
     }
     
 }

@@ -46,8 +46,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TextViewCell.identifier, for: indexPath) as! TextViewCell
         cell.selectionStyle = .none
-        cell.tableView = tableView
+        cell.textViewUpdateDelegate = self
         return cell
+    }
+    
+}
+
+extension ViewController: TextViewUpdateProtocol {
+    
+    func textViewChanged() {
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
     
 }
